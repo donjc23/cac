@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href='../stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='../stylesheets/style.css')
+
+  body
+    .container
+      .masthead
+        <img src="../images/church2.jpg" class="img-responsive" alt="Responsive image">
+        //h3.text-muted CHINESE ALLIANCE CHURCH OF FORT MYERS 華人基督教宣道會
+        ul.nav(class="nav-justified")
+          li.active: a(href="/") Home
+          li: a(href="/worship") Worship
+          li: a(href="/announcement") Announcements
+          li: a(href="/event") Events
+          li: a(href="/about") About us
+          li: a(href="/contact") Contact us
+
+      block content
+      .footer
+        p &copy;CHINESE ALLIANCE CHURCH OF FORT MYERS
+
+
+  script(src="https://code.jquery.com/jquery-1.10.2.min.js")
+  script(src='../../javascripts/bootstrap.min.js')

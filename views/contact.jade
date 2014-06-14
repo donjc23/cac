@@ -1,0 +1,31 @@
+
+
+extends layout
+
+block content
+
+  address
+    strong Church-Address:
+    p.
+      7469 San Carlos Blvd, <br>
+      Fort Myers, FL 33967 <br>
+      phone: (123) 456-7890 <br>
+
+    p Sunday Gatherings 1:00PM-3pm
+
+  hr
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14287.308554304742!2d-81.82635970046078!3d26.46130043238672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db167c00cc9ab7%3A0x35f55972896263fc!2s7469+San+Carlos+Blvd!5e0!3m2!1sen!2sus!4v1402410286981" width="600" height="450" frameborder="0" style="border:0"></iframe>
+
+
+  br
+  br
+  
+  form(role="form", method="get", action="http://maps.google.com/maps", target="_blank")
+    h3 Enter your starting address: Ex.  123 my street, fort myers, fl 33907
+    div.form-group
+      p
+        input.form-control(type="text", name="saddr")
+        input.form-control(type="hidden", name="daddr", value="[7469 San Carlos Blvd, Fort Myers, FL 33967]")
+      p
+        button.btn(type="submit", class="btn-primary") Get Directions
+
